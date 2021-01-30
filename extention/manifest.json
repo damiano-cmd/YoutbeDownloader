@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Downloader",
+    "version": "1.0.0",
+    "description": "ddd. ",
+
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "/all.js" ],
+            "run_at": "document_end"
+        }
+    ],
+	
+	
+
+    "icons": {"128": "/128_ico.png"},
+
+    "browser_action": {
+        "default_icon": "/ico.png",
+        "default_popup": "/popup.html",
+        "default_title": "Downloader"
+    },
+    "permissions": [
+        "storage",
+        "http://localhost:5000/"
+    ]
+}
